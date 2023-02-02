@@ -1,12 +1,11 @@
+function convertir(){
+    let valore= parseInt(document.getElementById("valor").value);
+    // el valor ingresado lo llamamos con document.getElementById
     let resultado=0;
     let dolar=366.33;
     let euro=273.99;
     let pesoChileno=0.2388;
     let pReal=43.7750;
-
-function convertir(){
-    let valore= parseInt(document.getElementById("valor").value);
-    // el valor ingresado lo llamamos con document.getElementById
     if(document.getElementById("uno").checked){
         resultado=valore*dolar;
         alert ("EL cambio de peso Argentino a dolar es: $"+resultado.toFixed(2));
